@@ -44,7 +44,7 @@
     {
         "id":8,
         "nombre":"Aceite Virgen Extra",
-        "img": "./image/aceite-Virgen-Extra.png",
+        "img": "./image/Aceite-Virgen-Extra.png",
         "precio": 1000
     },
     {
@@ -110,7 +110,7 @@
     {
         "id":19,
         "nombre":"Kiwi",
-        "img": "./image/kiwi.jpg",
+        "img": "./image/Kiwi.jpg",
         "precio": 1000
     },
     {

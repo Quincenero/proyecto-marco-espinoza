@@ -88,3 +88,5 @@ function revisarMensajeVacio() {
   carritoVacioElement.classList.toggle("escondido", hayProductos);     // ocultar mensaje si hay productos
   totalesContainer.classList.toggle("escondido", !hayProductos);       // mostrar totales si hay productos
 }
+
+
