@@ -25,7 +25,7 @@ Aplicación web para la gestión de productos en una verdulería, pensada con di
 
 ##  Deploy online
 
-Visitalo en GitHub Pages  [Verdulería Online]( https://quincenero.github.io/proyecto-25020-Marco-Espinoza/)
+Visitalo en GitHub Pages  [Verdulería Online](https://quincenero.github.io/proyecto-marco-espinoza/)
 
 ##  Autor
 
