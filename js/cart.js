@@ -4,11 +4,11 @@ const contenedorTarjetas = document.getElementById("productos-container");
 // ⏯️ Ejecuta todo después de cargar el HTML
 document.addEventListener("DOMContentLoaded", () => {
   fetch("https://raw.githubusercontent.com/Quincenero/proyecto-marco-espinoza/main/mercaderia.json") // Ruta raw desde GitHub
-    .then(response => response.json())
-    .then(data => {
-      mercaderia = data;
-      crearTarjetasProductosInicio(mercaderia);
-    })
+  .then(response => response.json())
+  .then(data => { 
+    mercaderia = data;
+    crearTarjetasProductosInicio(mercaderia); 
+  })
     .catch(error => console.error("Error al cargar mercadería:", error));
 });
 /** Crea las tarjetas de productos teniendo en cuenta la lista en mercaderia.js */
