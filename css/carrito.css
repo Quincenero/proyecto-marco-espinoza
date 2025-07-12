@@ -1,0 +1,145 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+#cart-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tarjeta-producto{
+ display: flex;
+ justify-content: space-around;
+ align-content: center;
+ padding: 10px;
+  height: 100px;
+  gap: 20px;
+ background: rgb(213, 213, 208);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.tarjeta-producto img{
+  width: 100px;
+  height: 100%;
+  
+}
+
+
+.tarjeta-producto div{
+  display: flex;
+  gap: 20px;
+ 
+
+  button {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(20, 134, 62);
+    color: white;
+    height: 24px;
+    padding: 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+   
+  }
+}
+
+#totales{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  color: rgb(3, 16, 16);
+  button {
+    width: 150px;
+    background-color: rgb(20, 134, 62);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #reiniciar {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: saddlebrown;
+  }
+  span {
+    font-weight: bold;
+    color: rgb(20, 134, 62);}
+  }
+
+  #carrito-vacio {
+  background-color: #fff8f8;
+  border: 1px solid #f74444;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  color: red;
+}
+.escondido {
+  display: none;
+}
+
+@media (max-width: 513px) {
+  #cart-container {
+  padding: 10px;
+  max-width: 100%;
+}
+.tarjeta-producto {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tarjeta-producto img {
+    width: 80%;
+    height: auto;
+  }
+
+  .tarjeta-producto div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #totales {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+}

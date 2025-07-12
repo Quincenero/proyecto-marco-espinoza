@@ -1,0 +1,95 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+
+/* Formulario */
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        h2 {
+            padding: 16px;
+        }
+        
+        label {
+            padding: 5px;
+        }
+        input, textarea, select {
+            padding: 12px 20px;
+            margin: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color:  rgb(78, 235, 78);
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 8px 20px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 4px;
+            display: block;
+        }
+
+        .form-message {
+            margin-top: 10px;
+            font-size: 0.95em;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .form-message.success {
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+         }
+
+    }
+    
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(127, 127, 240);
+    margin: 0 auto;
+    padding: 20px;
+    .location {
+        padding: 10px 0 10px;
+        }
+        p {
+            padding: 5px 0;
+        }
+        h3 {
+            padding-bottom: 10px;
+        }
+    }
+@media (max-width: 775px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .mapa iframe{
+        width: auto;
+        height: auto;
+    }
+}
+
+
+    

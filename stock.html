@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Verdulería online con diseño responsive, productos frescos y carrito interactivo.">
+    <meta name="keywords" content="verdulería, frutas, verduras, carrito, responsive, tienda online">
+    <meta name="author" content="Quincenero">
+
+
+    <title>Nuestros Productos</title>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/stock.css">
+    <!--<script src="./js/mercaderia.js"></script>-->
+    <script src="./js/cartservice.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    
+</head>
+<body>
+    <div class="delivery">
+        <p>Entregas a domicilio en CABA por compra minima de ARS 40 000</p>
+    </div>
+    <header>
+        <div class="logo">
+                <a href="./index.html"><img src="./image/logo.jpeg" alt="La Verduleria"></a>
+            </div>
+        <nav class="menu-nav">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+			<ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./stock.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>				
+                
+            </ul>
+            <a href="./carrito.html" id="cart"><img src="./image/shopping-cart.png" alt="carrito de compras"><span id="cuenta-carrito">0</span></a>	
+            <a href="./login.html" id="btnLogin"> Iniciar sesión</a>
+        </nav>
+    </header>
+    <main>
+        <p>🍏 En La Verdulería, cada bocado es frescura y calidad. Descubrí una selección cuidada de frutas, verduras y productos naturales, elegidos para que disfrutes lo mejor de la naturaleza en tu mesa cada día.
+        En La Verdulería ofrecemos mucho más que frutas y verduras: entregamos frescura, sabor y compromiso con tu bienestar. Nuestros productos son seleccionados con dedicación, priorizando calidad, origen local y atención a los detalles. Desde batatas dulces hasta aceites premium, cada artículo de nuestro catálogo está pensado para transformar tu cocina en un espacio de salud y placer.
+        </p>
+        <section id="productos-container">
+            
+			<!-- Se llena con js -->
+		</section>
+    </main>
+    <footer>
+       <div class="footer-container">
+            
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./stock.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./carrito.html">Carrito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@verduleria.com</p>
+                <p>Teléfono: 0800 000 5555</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/facebook-circle-logo-24.png" alt="Facebook"></a>
+                    <a href="#"><img src="./image/twitter-logo-24.png" alt="Twitter"></a>
+                    <a href="#"><img src="./image/instagram-alt-logo-24.png" alt="Instagram"></a>
+                    <a href="#"><img src="./image/tiktok-logo-24.png" alt="Tik Tok"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Medios de pago</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/visa.png" alt="Visa"></a>
+                    <a href="#"><img src="./image/mastercard.png" alt="MasterCard"></a>                    
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

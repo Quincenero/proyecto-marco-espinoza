@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Verdulería online con diseño responsive, productos frescos y carrito interactivo.">
+    <meta name="keywords" content="verdulería, frutas, verduras, carrito, responsive, tienda online">
+    <meta name="author" content="Quincenero">
+
+    <title>FORMULARIO DE REGISTRO Y LOGIN</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/cartService.js" defer></script>
+
+</head>
+<body>
+    <div class="delivery">
+        <p>📦 Entregas a domicilio en CABA por compra minima de ARS 40 000</p>
+    </div>
+    <header>
+        <div class="logo">
+                <a href="./index.html"><img src="./image/logo.jpeg" alt="La Verduleria"></a>
+            </div>
+        <nav class="menu-nav">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+			<ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./stock.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>				
+            </ul>
+
+            <a href="./carrito.html" id="cart"><img src="./image/shopping-cart.png" alt="carrito de compras"><span id="cuenta-carrito">0</span></a>	
+            <a href="./login.html" id="btnLogin"> Iniciar sesión</a>
+        </nav>
+    </header>
+<!-- REGISTRARSE -->
+    <main>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Inicia sesión con tus datos, si es nuevo Registrese</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-github' ></i>
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+
+                <form class="form form-register" novalidate>
+                    <div>
+                        <label>
+                            <i class='bx bx-user' ></i>
+                            <input type="text" placeholder="Nombre Usuario" name="userName">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo Electronico" name="userEmail">
+                        </label>
+
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="contraseña" name="userPassword">
+                        </label>
+                    </div>
+                    <input type="submit" value="Registrarse">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Te registraste correctamente</div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+<!-- INICIAR SESION -->
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡Bienvenido nuevamente!</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar sesion</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-github' ></i>
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <p>o Iniciar sesión con una cuenta</p>
+
+                <form class="form form-login" novalidate>
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo Electronico" name="userEmail">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="contraseña" name="userPassword">
+                        </label>
+                    </div>
+                    <input type="submit" value="Iniciar Sesión">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Iniciaste sesion correctamente</div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+       <div class="footer-container">
+            
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./stock.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./carrito.html">Carrito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@verduleria.com</p>
+                <p>Teléfono: 0800 000 5555</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/facebook-circle-logo-24.png" alt="Facebook"></a>
+                    <a href="#"><img src="./image/twitter-logo-24.png" alt="Twitter"></a>
+                    <a href="#"><img src="./image/instagram-alt-logo-24.png" alt="Instagram"></a>
+                    <a href="#"><img src="./image/tiktok-logo-24.png" alt="Tik Tok"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Medios de pago</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/visa.png" alt="Visa"></a>
+                    <a href="#"><img src="./image/mastercard.png" alt="MasterCard"></a>                    
+                </div>
+            </div>
+        </div> 
+    <script src="./js/menu.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/register.js" type="module"></script>
+    <script src="./js/login.js" type="module"></script>
+</body>
+</html>

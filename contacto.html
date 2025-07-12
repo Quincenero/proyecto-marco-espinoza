@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+    <script src="./js/contacto.js"></script>
+    <script src="./js/cartService.js" defer></script>
+</head>
+<body>
+    <div class="delivery">
+        <p>📦 Entregas a domicilio en CABA por compra minima de ARS 40 000</p>
+    </div>
+    <header>
+        <div class="logo">
+                <a href="../index.html"><img src="../image/logo.jpeg" alt="La Verduleria"></a>
+            </div>
+        <nav class="menu-nav">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+			<ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./stock.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+            </ul>	
+            <a href="./carrito.html" id="cart"><img src="../image/shopping-cart.png" alt="carrito de compras"><span id="cuenta-carrito">0</span></a>
+            <a href="./login.html" id="btnLogin">Iniciar Sesión</a>
+        </nav>
+    </header>
+   
+    <main>
+    
+        <form id="formulario" action="https://formspree.io/f/movwgbre" method="POST" novalidate>
+            <h2>Formulario de Contacto</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+            <span class="error" id="error-name"></span>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+            <span class="error" id="error-email"></span>
+
+            <label for="producto">Productos</label>
+            <select id="producto" name="producto">
+                <option value="">Seleccionar</option>
+                <option value="verduras">Verduras</option>
+                <option value="frutas">Frutas</option>
+                <option value="aceite-semillas">Almacén</option>
+            </select>
+            <span class="error" id="error-producto"></span>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="error" id="error-message"></span>
+
+            <div id="form-message" class="form-message"></div>
+            <button type="submit">Enviar</button>
+
+        </form>
+       
+    </main>
+    <section>
+        <div class="location">
+            <h3>Datos de contacto</h3>
+            <h5>Nuestra direccion: </h4>
+            <p>Av. Corrientes 3247 - CABA</p>
+            <h5>Nuestro telefono</h5>
+            <p>0800 000 5555</p>
+            
+            
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.073176308904!2d-58.421622403303225!3d-34.60369890653031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses-419!2sar!4v1752028897325!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+          
+    <footer>
+       <div class="footer-container">
+            
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./stock.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./carrito.html">Carrito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@verduleria.com</p>
+                <p>Teléfono: 0800 000 5555</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/facebook-circle-logo-24.png" alt="Facebook"></a>
+                    <a href="#"><img src="./image/twitter-logo-24.png" alt="Twitter"></a>
+                    <a href="#"><img src="./image/instagram-alt-logo-24.png" alt="Instagram"></a>
+                    <a href="#"><img src="./image/tiktok-logo-24.png" alt="Tik Tok"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Medios de pago</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/visa.png" alt="Visa"></a>
+                    <a href="#"><img src="./image/mastercard.png" alt="MasterCard"></a>                    
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="./js/menu.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+.delivery {
+    background-color: rgb(129, 215, 66);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+#btnLogin {
+    color:rgb(7, 97, 9);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    align-content: center;
+    margin-left: 20px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    width: 100px;
+    height: 90px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;   
+}
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    list-style: none;
+    
+    a {
+        text-decoration: none;
+    color: rgb(15, 114, 36);
+    font-size: 1.3rem;
+    font-weight: 500;
+    }
+    a:hover{
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 5px;
+}
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-decoration: none;
+    padding-left: 20px;
+    img {
+        width: 40px;
+        height: 50px;
+    }
+    span {
+        background-color: rgb(15, 114, 36);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+/* Menu hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    color: blue;
+}
+
+.menu-toggle span {
+    background: rgb(14, 1, 1);
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    
+}
+
+@media screen and (max-width: 768px){
+    .delivery {
+        margin: auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        img {
+            margin: 10px 0 20px 80px;
+        }
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        top: 10px;
+        margin-bottom: 50px;
+        background: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+}
