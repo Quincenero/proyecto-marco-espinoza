@@ -41,11 +41,31 @@ document.addEventListener("DOMContentLoaded", () => {
       hasErrors = true;
     }
 
+    // Si no hay errores, enviar formulario con fetch
     if (!hasErrors) {
-      messageBox.textContent = "✅ Formulario enviado correctamente.";
-      messageBox.classList.add("success");
+      const formData = new FormData(form);
 
-      form.reset();
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          messageBox.textContent = "✅ Formulario enviado correctamente.";
+          messageBox.classList.add("success");
+          form.reset();
+        } else {
+          messageBox.textContent = "❌ Hubo un error al enviar el formulario.";
+          messageBox.classList.add("error");
+        }
+      })
+      .catch(() => {
+        messageBox.textContent = "❌ No se pudo conectar con el servidor.";
+        messageBox.classList.add("error");
+      });
     }
   });
 });
