@@ -1,4 +1,4 @@
-[
+const mercaderia = [
     {
         id:1,
         nombre:"Batatas",
