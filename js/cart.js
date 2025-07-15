@@ -30,6 +30,5 @@ function crearTarjetasProductosInicio(productos){
     // Se usa el índice del producto para identificarlo al agregarlo al carrito
     nuevoMercaderia.querySelector("button").addEventListener("click", () => agregarAlCarrito(producto));  
   });
-  
 }
 
