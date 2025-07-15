@@ -9,6 +9,7 @@
     <meta name="author" content="Quincenero">
 
     <title>Carrito de compras</title>
+
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
                 
             </ul>
             <a href="./carrito.html" id="cart"><img src="./image/shopping-cart.png" alt="carrito de compras"><span id="cuenta-carrito">0</span></a>	
-            <a href="./login.html" id="btnLogin"> Iniciar sesión</a>
+            <a href="#" id="btnLogin"> Cerrar sesion</a>
         </nav>
     </header>
     <main>
@@ -90,6 +91,24 @@
             </div>
         </div> 
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+            if (!usuario) {
+                Swal.fire({
+                icon: 'warning',
+                title: 'Acceso denegado',
+                text: 'Debés iniciar sesión o registrate para acceder al carrito.',
+                confirmButtonText: 'Ir al login'
+                }).then(() => {
+                window.location.href = "login.html";
+                });
+            }
+            });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>

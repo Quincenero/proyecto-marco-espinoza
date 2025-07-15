@@ -6,9 +6,9 @@ const alertaError = document.querySelector('.form-register .alerta-error');
 const alertaExito = document.querySelector('.form-register .alerta-exito');
 
 // EXPRESIONES REGULARES
-const userNameRegex = /^[a-zA-Z0-9\_\-]{6,16}$/;
+const userNameRegex = /^[a-zA-Z0-9\_\-]{4,16}$/;
 export const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-export const passwordRegex = /^.{8,16}$/;
+export const passwordRegex = /^.{6,16}$/;
 
 export const estadoValidacionCampos = {
   userName: false,
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   inputUser.addEventListener("input", () => {
-    validarCampo(userNameRegex,inputUser,"El usuario tiene que tener de 6 a 16 caracteres y solo puede contener, letras y guión bajo.");
+    validarCampo(userNameRegex,inputUser,"El usuario tiene que tener de 4 a 16 caracteres y solo puede contener, letras y guión bajo.");
   });
 
   inputEmail.addEventListener("input", () => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   inputPass.addEventListener("input", () => {
-    validarCampo(passwordRegex,inputPass,"La contraseña tiene que ser de 8 a 16 caracteres");
+    validarCampo(passwordRegex,inputPass,"La contraseña tiene que ser de 6 a 16 caracteres");
   });
 });
 

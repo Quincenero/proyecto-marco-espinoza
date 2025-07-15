@@ -88,3 +88,23 @@ function revisarMensajeVacio() {
   carritoVacioElement.classList.toggle("escondido", hayProductos);     // ocultar mensaje si hay productos
   totalesContainer.classList.toggle("escondido", !hayProductos);       // mostrar totales si hay productos
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+  if (!usuario) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Acceso denegado',
+      text: 'Debés iniciar sesión para acceder al carrito.',
+      confirmButtonText: 'Iniciar sesión'
+    }).then(() => {
+      window.location.href = "login.html";
+    });
+  }
+});
+function reiniciarCarrito() {
+  localStorage.removeItem(keyLocalstorage);
+  cantidadElement.innerText = 0;
+  precioElement.innerText = 0;
+}
