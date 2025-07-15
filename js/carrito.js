@@ -3,6 +3,7 @@ const cantidadElement = document.getElementById("cantidad");
 const precioElement = document.getElementById("precio");
 const carritoVacioElement = document.getElementById("carrito-vacio");
 const totalesContainer = document.getElementById("totales");
+const keyLocalStorage = "mercaderia"
 
 /** Crea las tarjetas de productos teniendo en cuenta lo guardado en localstorage */
 function crearTarjetasProductosCarrito() {
