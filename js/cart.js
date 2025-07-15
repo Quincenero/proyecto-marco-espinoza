@@ -1,18 +1,17 @@
-
-data = [];
 const apiUrl = "https://raw.githubusercontent.com/Quincenero/proyecto-marco-espinoza/refs/heads/main/mercaderia.json";
+
 fetch(apiUrl)
   .then(response => response.json())
-  .then(data => { 
+  .then(productos => { 
     /*console.log(data)*/
     
-  crearTarjetasProductosInicio(data); 
+  crearTarjetasProductosInicio(productos); 
   })
   .catch(error => console.error("Error al cargar los productos:", error));
 
 const contenedorTarjetas = document.getElementById("productos-container");
 // Función para agregar un producto al carrito
-crearTarjetasProductosInicio(data);
+crearTarjetasProductosInicio(productos);
 /** Crea las tarjetas de productos */
 
 function crearTarjetasProductosInicio(productos){
@@ -33,4 +32,4 @@ function crearTarjetasProductosInicio(productos){
   });
   
 }
-actualizarNumeroCarrito();
+
