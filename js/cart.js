@@ -1,4 +1,4 @@
-data = [];
+
 data = [];
 const apiUrl = "https://raw.githubusercontent.com/Quincenero/proyecto-marco-espinoza/refs/heads/main/mercaderia.json";
 fetch(apiUrl)
@@ -33,3 +33,4 @@ function crearTarjetasProductosInicio(productos){
   });
   
 }
+actualizarNumeroCarrito();
