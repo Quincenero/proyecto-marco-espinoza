@@ -67,6 +67,7 @@ function actualizarNumeroCarrito(){
     return cuentaCarritoElement.innerText = cuenta;
   }
   cuentaCarritoElement.innerText = 0;
+   
 }
 
 /** Vaciar el carrito */
@@ -74,6 +75,4 @@ function reiniciarCarrito(){
   localStorage.removeItem(keyLocalstorage);
   actualizarNumeroCarrito();
 }
-
-
 actualizarNumeroCarrito();
