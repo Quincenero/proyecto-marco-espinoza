@@ -12,6 +12,7 @@ fetch(apiUrl)
 const contenedorTarjetas = document.getElementById("productos-container");
 // Función para agregar un producto al carrito
 crearTarjetasProductosInicio(productos);
+
 /** Crea las tarjetas de productos */
 
 function crearTarjetasProductosInicio(productos){
@@ -27,7 +28,6 @@ function crearTarjetasProductosInicio(productos){
     `
     contenedorTarjetas.appendChild(nuevoMercaderia);
     // Agregar el evento al botón de agregar al carrito
-    // Se usa el índice del producto para identificarlo al agregarlo al carrito
     nuevoMercaderia.querySelector("button").addEventListener("click", () => agregarAlCarrito(producto));  
   });
 }
